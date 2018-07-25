@@ -22,7 +22,6 @@
             }
         ],
         "menus": {
-
             "commandPalette": [
                 {
                     "command": "extension.previewCsv",
@@ -36,6 +35,16 @@
                     "group": "navigation"
                 }
             ]
+        },
+        "configuration": {
+            "title": "PreviewCSV configuration",
+            "properties": {
+                "previewcsv.linesToPreview": {
+                    "type": "integer",
+                    "default": 4,
+                    "description": "The number of lines to preview, including the title/schema line."
+                }
+            }
         }
     },
     "scripts": {
@@ -51,9 +60,5 @@
         "tslint": "^5.8.0",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
-    },
-    "dependencies": {
-        "readline": "*",
-        "fs":"*"
     }
 }
