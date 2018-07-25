@@ -6,7 +6,7 @@ An extension to help working with CSV files.
 
 Preview first n lines of a .csv file. PreviewCSV makes it possible to peek large CSV files without leaving the editor.
 
-![Preview](images/PreviewCsv_demo.gif)
+![Preview](https://image.ibb.co/bTQFDo/Preview_Csv_demo.gif)
 
 Disclaimer: The coloring on text is applied by [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
 

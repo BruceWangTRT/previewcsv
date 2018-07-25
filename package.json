@@ -1,7 +1,7 @@
 {
     "name": "previewcsv",
     "displayName": "PreviewCSV",
-    "description": "Preview first n lines of a csv file and display as a spreadsheet",
+    "description": "Preview first n lines of a csv file",
     "version": "1.0.0",
     "publisher": "yanxinwang",
     "engines": {
