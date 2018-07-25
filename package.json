@@ -11,21 +11,28 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.previewCsv"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.previewCsv",
+                "title": "Preview CSV"
             }
         ],
         "menus": {
+
+            "commandPalette": [
+                {
+                    "command": "extension.previewCsv",
+                    "when": "False"
+                }
+            ],
             "explorer/context": [
                 {
                     "when": "resourceExtname == .csv",
-                    "command": "extension.sayHello",
+                    "command": "extension.previewCsv",
                     "group": "navigation"
                 }
             ]

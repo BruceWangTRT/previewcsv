@@ -17,11 +17,11 @@ export function activate(context: vscode.ExtensionContext) {
     // The command has been defined in the package.json file
     // Now provide the implementation of the command with  registerCommand
     // The commandId parameter must match the command field in package.json
-    let disposable = vscode.commands.registerCommand('extension.sayHello', (uri) => {
+    let disposable = vscode.commands.registerCommand('extension.previewCsv', (uri) => {
         // The code you place here will be executed every time your command is executed
 
         // Display a message box to the user
-        vscode.window.showInformationMessage('Hello World!');
+        vscode.window.showInformationMessage('Previewing first y lines of xxxxx.csv');
         let i = 0;
         let previewContent = '';
         let csvStream = fs.createReadStream(uri.path);
@@ -33,13 +33,12 @@ export function activate(context: vscode.ExtensionContext) {
                 return;
             }
             previewContent = previewContent.concat(line, '\n');
-            console.log(line);
             i++;
         });
         rl.on('close', ()=> {
             csvStream.close();
             vscode.workspace.openTextDocument({language: 'CSV', content: previewContent})
-            .then(doc => vscode.window.showTextDocument(doc));
+                .then(doc => vscode.window.showTextDocument(doc));
         });
     });
 
