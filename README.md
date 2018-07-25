@@ -1,6 +1,6 @@
-# previewcsv README
+# PreviewCSV
 
-This is the README for your extension "previewcsv". After writing up a brief description, we recommend including the following sections.
+An extension to help working with CSV files.
 
 ## Features
 
