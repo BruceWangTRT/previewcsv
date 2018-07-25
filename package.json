@@ -2,7 +2,7 @@
     "name": "previewcsv",
     "displayName": "PreviewCSV",
     "description": "Preview first n lines of a csv file and display as a spreadsheet",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "yanxinwang",
     "engines": {
         "vscode": "^1.25.0"
