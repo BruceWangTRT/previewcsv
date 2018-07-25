@@ -38,7 +38,7 @@ export function activate(context: vscode.ExtensionContext) {
         });
         rl.on('close', ()=> {
             csvStream.close();
-            vscode.workspace.openTextDocument({content: previewContent})
+            vscode.workspace.openTextDocument({language: 'CSV', content: previewContent})
             .then(doc => vscode.window.showTextDocument(doc));
         });
     });
